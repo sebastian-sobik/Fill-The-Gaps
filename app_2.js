@@ -1,7 +1,7 @@
 // ! To jest zmieniona wersja ostateczna, bez przesuwającej się listy.
 // ! Na dysku jest pełna działająca wersja 
 
-
+// zmieeeenione
 
 
 
