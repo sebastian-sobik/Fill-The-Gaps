@@ -1,8 +1,3 @@
-// ! To jest zmieniona wersja ostateczna, bez przesuwającej się listy.
-// ! Na dysku jest pełna działająca wersja 
-
-
-
 const teksty = ["Nie poddawaj się, myślę o Tobie, Kruszynko ❤", "Ci tengo molto a te, Tesoro ❤", "Mi piaci, Tesoro 😏", 
                 "Dobrze, że Cię mam ❣", "Daj popalić tym wiedźmom 🧙‍♀️", "No cześć, Ślicznotko ☕☀", "Ti amo, sai? ❤",
                 "Miłego dziooonka ☀🌹", "Mi manchi 😥"];
