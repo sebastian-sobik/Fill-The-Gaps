@@ -1,8 +1,22 @@
 // ! To jest zmieniona wersja ostateczna, bez przesuwającej się listy.
 // ! Na dysku jest pełna działająca wersja 
 
-// zmieeeenione
 
+
+const teksty = ["Nie poddawaj się, myślę o Tobie, Kruszynko ❤", "Ci tengo molto a te, Tesoro ❤", "Mi piaci, Tesoro 😏", 
+                "Dobrze, że Cię mam ❣", "Daj popalić tym wiedźmom 🧙‍♀️", "No cześć, Ślicznotko ☕☀", "Ti amo, sai? ❤",
+                "Miłego dziooonka ☀🌹", "Mi manchi 😥"];
+
+function losujTekst(teksty) {
+    return teksty[Math.floor(Math.random()*teksty.length)];
+}
+
+function podmienTekst() {
+    const h2 = document.querySelector("h2");
+    h2.innerText = losujTekst(teksty);
+}
+
+podmienTekst();
 
 
 const btn_wczytaj = document.querySelector("#btn-wczytaj");
