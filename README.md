@@ -13,8 +13,11 @@ This simple app was designed with my girlfriend in mind. <br>She studies Italian
 ## TO DO 
 * [ ] remake HTML5 - syntax
 * [ ] remake javascript 
+    * [ ] sent it to your student -> ktoś tworzy tekst z ___ i potem tylko wysyła taki do uzupełnienia.
 * [ ] css check
-* [ ] responive - only web, and tablets
+    * [ ] za małe ramki
+    * [ ] reset button
+    * [ ] responive - only web, and tablets
 * [ ] gif record - to show features 
 * [ ] image - word file -> app text with inputs -> word file with answers
 * [ ] krótki opis mnie na profilu git - chcę tworzyc przydatne rzeczy
