@@ -1,6 +1,5 @@
 # Fill The Gaps
-
-<img src="./program.gif" alt="GIF" width="500" height="500">
+<img src="gifs/program.gif" alt="GIF" width="500" height="500">
 
 
 ## Description
@@ -10,6 +9,7 @@ Fill The Gaps allows user modify text/file that contain gaps symbolised as `___`
 My goal was to simplify student job which excersises were created as text with gaps marked with `___`.
 
 ## Responsive
+<img src="gifs/responsive.gif" alt="GIF" width="600" height="380">
 
 ## Usage
 * you can generate word file with ___ easily, just write text, mark gaps as _, and generate it without filling gaps,
