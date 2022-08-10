@@ -20,9 +20,6 @@ My goal was to simplify student job which excersises were created as text with g
 * [X] review HTML5 syntax
 * [X] review javascript 
 * [x] css remake
-* [ ] gif record - to show features 
-* [ ] image - word file -> app text with inputs -> word file with answers
-* [ ] krótki opis mnie na profilu git - chcę tworzyc przydatne rzeczy
 * [ ] dark theme
 
 ## New idea 💡
