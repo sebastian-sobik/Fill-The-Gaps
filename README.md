@@ -4,10 +4,12 @@
 
 
 ## Description
-Fill The Gaps allows user modify text/file that contain gaps symbolised as `___`. Then user can export this as word file, and his answers marked as 
+Fill The Gaps allows user modify text/file that contain gaps symbolised as `___`. Then user can export this as word file, and his answers will be marked (underlined and bold).
 
 ## App story 🍝
 My goal was to simplify student job which excersises were created as text with gaps marked with `___`.
+
+## Responsive
 
 ## Usage
 * you can generate word file with ___ easily, just write text, mark gaps as _, and generate it without filling gaps,
