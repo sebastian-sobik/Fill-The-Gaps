@@ -7,10 +7,9 @@ Fill The Gaps allows user modify text/file that contain gaps symbolised as `___`
 This simple app was designed with my girlfriend in mind. <br>She studies Italian philology, and gets multiple excersises from her professors in format like I've shown above. <br> My purpose was to simplify her job, and let her focus on solving excersises instead of struggling with this odd files.
 
 ## Usage
-    * you can generate word file with ___ easily, just write text, mark gaps as _, and generate it without filling gaps,
+* you can generate word file with ___ easily, just write text, mark gaps as _, and generate it without filling gaps,
       then your students can come with this and fill it easily.
-    * 
-     
+* 
 
 ## TO DO 
 * [ ] remake HTML5 - syntax
