@@ -1,5 +1,8 @@
 # Fill The Gaps
 
+<img src="./program.gif" alt="GIF" width="500" height="500">
+
+
 ## Description
 Fill The Gaps allows user modify text/file that contain gaps symbolised as `___`. Then user can export this as word file, and his answers marked as 
 
