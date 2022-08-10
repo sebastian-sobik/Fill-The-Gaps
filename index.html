@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przesuwanie absolute</title>
-    <link rel="stylesheet" href="style_2.css">
+    <title>Fill the gaps</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <div class="wrapper">
-        <div class="input-area">
-            <h2>Nie poddawaj się, myślę o Tobie, Kruszynko</h2>
-            <textarea spellcheck="false" placeholder="W tekście, który podasz zostaną wykryte symbole '_'"></textarea>
-            <button id="btn-wczytaj">wczytaj</button>
-        </div>
+        <main class="input-area">
+            <h2>Fill the gaps</h2>
+            <textarea spellcheck="false" placeholder="The '_' symbols will be detected in the text you provide."></textarea>
+            <button id="btn-load">load</button>
+        </main>
     </div>
-    <div class="shortcuts">
+    <aside class="shortcuts opacity-0">
         <div class="skrot">
             <span>TAB</span>
             <div class="shortcut">
@@ -29,9 +29,9 @@
                 <input class="ramka" type="text"><input class="ramka" type="text">
             </div>
         </div>
-    </div>
+    </aside>
 </body>
 
-<script src="app_2.js"></script>
+<script src="app.js"></script>
 
 </html>
