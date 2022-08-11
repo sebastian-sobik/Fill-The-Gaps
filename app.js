@@ -3,10 +3,13 @@ function load() {
     const btn_load = document.querySelector("#btn-load");
 
     
-    if (!isMobile())
-        shortcutsShow();
+
     
     if(textarea.value != ""){
+
+        if (!isMobile())
+            shortcutsShow();
+
         const text = searchGaps(textarea.value);
 
         textarea.remove();
