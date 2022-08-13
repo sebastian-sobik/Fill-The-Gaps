@@ -259,6 +259,10 @@ h2 {
     opacity: 0;
 }
 
+
+
+
+
 @media (max-width: 800px) {
     .input-area {
         min-width: 80%;
