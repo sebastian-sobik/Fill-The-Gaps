@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --font-color               : #353232;
     --bg-color                 : #d1beff;
@@ -31,6 +35,10 @@ body {
     100%{background-position:10% 0%}
 }
 
+
+
+
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -47,73 +55,80 @@ body {
     overflow: hidden;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    color: #7b4daa;
+}
 
 
 
-/*----- ---------- -----*/
-/*----- INPUT_AREA -----*/
-/*----- ---------- -----*/
+
 
 .input-area {
     width: 45%;
     min-width: 700px;
     height:90%;
-    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     
     padding: 1.5em;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
     background-color: var(--input-bg-color);
     transition: opacity 450ms ease-in-out;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 0.8em;
-    color: #7b4daa;
+.input-area textarea, .wczytane {
+    width:100%;
+    padding: 0.5em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    flex: 1 1 auto;
+    border: 2px solid var(--bg-color);
+    color: var(--input-font-color);
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
 
-    flex: 0 1 auto;
 }
 
 .input-area textarea {
-    box-sizing: border-box;
-    border-radius: 0.2em;
-    width: 100%;
-    flex: 1 1 auto;
-
-    padding: 0.5em;
-    margin-bottom: 1rem;
-    
-    border: 2px solid var(--bg-color);
-
-    color: var(--input-font-color);
-    font-size: 1.25rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.5em;
-    outline: none;
-    resize: none;
+    resize: none;  
 }
+
+.wczytane {
+    flex: 1 1 auto;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.input-area textarea, ramka {
+    outline: none;
+}
+
+.input-area textarea, #btn-load, .wczytane {
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+
+
+
 
 #btn-load {
     width:180px;
     height:50px;
-    box-sizing: border-box;
     border: none;
     flex: 0 0 50px;
     
     background-color: var(--input-font-color-active);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 
     color:white;    
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    line-height: 1.5em;
     letter-spacing: 1px;
 
     transition: all 200ms cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -125,49 +140,28 @@ h2 {
     width: 200px;
 }
 
-.wczytane {
-    
-    width: 100%;
-    flex: 1 1 auto;
-    overflow:scroll;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    border-radius: 0.2em;
 
-    padding: 0.5em;
-    margin-bottom: 1rem;
-    
-    border: 2px solid var(--bg-color);
 
-    color: var(--input-font-color);
-    font-size: 1.25rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.5em;
-}
+
 
 .ramka {
-    outline: none;
-    box-sizing: border-box;
-    font: inherit;
-    font-size: 1.1rem;
     height: 1.2em;
     width: 10ch;
-    text-align: center;
-    border-radius: 0.2em;
+    border-radius: 0.2rem;
     border: 1px solid rgb(150, 150, 150);
-
-
+    
+    text-align: center;
     color: var(--input-font-color-active);
+    font-family: inherit;
+    font-size: 1.1rem;
     
     padding: 0.1em 0.4em;
-    margin: 0 0.2em;
+    margin: 0 0.2rem;
 
     transition: width 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.ramka:focus
-{
+.ramka:focus {
     width: 12ch;
     border: 2px solid #935bcc;
 }
@@ -179,6 +173,9 @@ h2 {
 .ramka::selection {
     background-color: rgba(170, 54, 208, 0.23);
 }
+
+
+
 
 
 .shortcuts {
@@ -199,11 +196,9 @@ h2 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     background-color: white;
-    border-radius: 1em;
+    border-radius: 1rem;
     transition: ease-in-out 2s all;
 }
-
-
 
 .shortcuts .ramka {
     height: 25px;
@@ -211,13 +206,16 @@ h2 {
     pointer-events:none;
 }
 
+
+
+
+
 .shortcuts .ramka:nth-of-type(1) {
     animation: 6s tab_animation infinite 1s;
 }
 .shortcuts .ramka:nth-of-type(2) {
     animation: 6s tab_animation infinite 4s ;
 }
-
 .skrot:nth-of-type(2) .ramka:nth-of-type(2) {
     animation: 6s tab_animation infinite 1s;
 }
@@ -226,7 +224,6 @@ h2 {
 }
 
 @keyframes tab_animation {
-    
     0%{
         border: 3px solid #935bcc;
     }
@@ -241,7 +238,6 @@ h2 {
     }
 }
 
-
 .shortcut {
     display:flex;
     justify-content:space-evenly;
@@ -253,14 +249,10 @@ h2 {
 }
 
 .skrot span {
-    margin-bottom: 1em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
-    line-height: 1.8em;
+    margin-bottom: 1rem;
+    font: 600 1.3rem/1.8 'Poppins', sans-serif ; 
+    letter-spacing: 1.5;
     color: var(--font-color);
-
 }
 
 .opacity-0 {
@@ -268,18 +260,15 @@ h2 {
 }
 
 @media (max-width: 800px) {
-
     .input-area {
         min-width: 80%;
     }
-    
 }
 
 @media (max-width: 1250px) {
     .shortcuts {
         transform: translateY(-50%) scale(0.8);
     }
-
     .shortcuts span {
         font-size: 1rem;
     }
@@ -289,11 +278,9 @@ h2 {
     #btn-load {
         width: 100%;
     }
-
     #btn-load:hover{
         width: 100%;
     }
-
     .input-area{
         height: 80%;
     }
