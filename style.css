@@ -13,27 +13,19 @@
 
 :root {
     --font-color               : #353232;
-    --bg-color                 : #d1beff;
+    --bg-color                 : #5791d3;
     --input-bg-color           : #FFFBFB;
     --input-font-color         : #4A4343;
-    --input-font-color-active  : #6b37a0;
+    --input-font-color-active  : #5791d3;
     --input-border-color-active: #4A4343;
 }
 
 body {
-    background-color: #d8dede;
-    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
-    background-size: 200% 200%;
-    -webkit-animation: Animation 20s ease infinite;
-    -moz-animation: Animation 20s ease infinite;
-    animation: Animation 20s ease infinite;
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@keyframes Animation {
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
-}
 
 
 
@@ -58,7 +50,7 @@ body {
 h2 {
     font-size: 2rem;
     margin-bottom: 1.8rem;
-    color: #7b4daa;
+    color: #5791d3;
 }
 
 
@@ -72,7 +64,7 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    
+
     padding: 1.5em;
     border-radius: 0.25rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -95,7 +87,7 @@ h2 {
 }
 
 .input-area textarea {
-    resize: none;  
+    resize: none;
 }
 
 .wczytane {
@@ -122,11 +114,11 @@ h2 {
     height:50px;
     border: none;
     flex: 0 0 50px;
-    
+
     background-color: var(--input-font-color-active);
     border-radius: 0.5rem;
 
-    color:white;    
+    color:white;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -136,7 +128,7 @@ h2 {
 
 #btn-load:hover {
     cursor: pointer;
-    background-color: #935bcc;
+    background-color: #3e6ea5;
     width: 200px;
 }
 
@@ -149,12 +141,12 @@ h2 {
     width: 10ch;
     border-radius: 0.2rem;
     border: 1px solid rgb(150, 150, 150);
-    
+
     text-align: center;
     color: var(--input-font-color-active);
     font-family: inherit;
     font-size: 1.1rem;
-    
+
     padding: 0.1em 0.4em;
     margin: 0 0.2rem;
 
@@ -250,7 +242,7 @@ h2 {
 
 .skrot span {
     margin-bottom: 1rem;
-    font: 600 1.3rem/1.8 'Poppins', sans-serif ; 
+    font: 600 1.3rem/1.8 'Poppins', sans-serif ;
     letter-spacing: 1.5;
     color: var(--font-color);
 }
